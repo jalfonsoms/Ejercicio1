@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formato-de-texto-HTML</title>
     <style>
         code{
-            background-color: #dde0fd;
+            background-color: #f3f4fd;
         }
     </style>
+    <link rel="icon" href="/favicon.png">
 </head>
 <body>
-    <h1>HTML</h1>
+    <h1 style="font-size: 50px;">HTML</h1>
     <p><b>HTML</b>,siglas en inglés de <b><em>HyperText Markup Language</em></b> (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del <em>World Wide Web Consortium</em> (W3C) o Consorcio WWW,organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la <em>World Wide Web</em> (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.<sup>1</sup></p>
     <h2>Primeras especificaciones de HTML</h2>
     <hr>
@@ -46,8 +47,36 @@
             <ul>
                 <li><code>&lt;article&gt;</code>:  Representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o re-utilizable.</li>
                 <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: encabezados o títulos del documento con diferente relevancia.</li>
+                <li><code>&lt;table&gt;</code>: cuando se desea alinear contenido.</li>
+                <ul>
+                    <li><code>&lt;tr&gt;</code>: fila de una tabla.</li>
+                    <li><code>&lt;td&gt;</code>: celda de una tabla (debe estar dentro de una fila).</li>
+                </ul>
+                <li><code>&lt;footer&gt;</code>: representa el pie de un documento o sección. La información que se suele añadir en este bloque es el autor del documento, enlaces a contenido relacionado, información de copyright, avisos legales, etc.</li>
+                <li><code>&lt;a&gt;</code>: hipervínculo o enlace, dentro o fuera del sitio web. Debe definirse el parámetro de pasada por medio del atributo <i>href</i>.  Por ejemplo: <code>&lt;a href="http://www.example.com" title="Ejemplo" target="_blank" tabindex="1"&gt;Ejemplo&lt;/a&gt;</code>  se representa como ejemplo.</li>
+                <li><code>&lt;div&gt;</code>:  división de la página. Se recomienda, junto con css, en vez de <code>&lt;table&gt;</code> cuando se desea alinear contenido.</li>
+                <li><code>&lt;img&gt;</code>:  imagen. Requiere del atributo src, que indica la ruta en la que se encuentra la imagen.</li>
+                <li><code>&lt;ol&gt;</code>: etiqueta para listas ordenadas.</li>
+                <li><code>&lt;ul&gt;</code>: etiqueta para listas desordenadas.</li>
+                <li><code>&lt;li&gt;</code>:  etiqueta elementos de una lista.</li>
+                <li><code>&lt;b&gt;</code>:  texto en negrita  (<i>etiqueta desaprobada. Se recomienda usar la etiqueta <code>&lt;strong&gt;</code>)</i></li>
+                <li><code>&lt;i&gt;</code>: texto en cursiva (<i>etiqueta desaprobada. Se recomienda usar la etiqueta</i> <code>&lt;em&gt;</code>)</li>
+                <li><code>&lt;s&gt;</code>:  texto tachado (<i>etiqueta desaprobada. Se recomienda usar la etiqueta </i><code>&lt;del&gt;</code>)</li>
+                <li><code>&lt;u&gt;</code>:  Antes texto subrayado. A partir de HTML 5 define porciones de texto diferenciadas o destacadas del resto, para indicar correcciones por ejemplo (etiqueta desaprobada en HTML 4.01 y redefinida en HTML 5).</li>
+                <li><code>&lt;main&gt;</code>: división estructural de la página que engloba el contenido principal de la misma. Dentro de esta etiqueta, por ejemplo, encontramos los <code>&lt;article&gt;</code>.</li>
+                <li><code>&lt;span&gt;</code>: Sirve para diferenciar un texto de otro.</li>
+                <li><code>&lt;br&gt;</code>: Sirve para provocar un salto de línea. Esta etiqueta no se cierra.</li>
+                <li><code>&lt;hr&gt;</code>: Sirve para provocar un cambio de tema entre párrafos. Esta etiqueta no se cierra.</li>
+                <li><code>&lt;details&gt;</code>:  Sirve para crear una sección desplegable</li>
+                <li><code>&lt;summary&gt;</code>: Sirve para crear el título de la sección desplegable.</li>
             </ul>
         </li>
+    </ul>
+    <p>La mayoría de etiquetas deben cerrarse como se abren, pero con una barra ( / ) tal como se muestra en los siguientes ejemplos:</p>
+    <ul>
+        <li><code>&lt;table&gt;</code><code>&lt;tr&gt;</code><code>&lt;td&gt;</code><code>Contenido de una celda</code><code>&lt;/td&gt;</code><code>&lt;/tr&gt;</code><code>&lt;/table&gt;</code></li>
+        <li><code>&lt;script&gt;</code><code>Código de un script integrado en la página</code><code>&lt;/script&gt;</code></li>
+        <li><code>&lt;header&gt;</code><code>División estructural en la parte del contenido.</code><code>&lt;/header&gt;</code></li>
     </ul>
 </body>
 </html>
